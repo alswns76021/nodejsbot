@@ -72,25 +72,25 @@ client.on('message', (message) => {
   if(message.content == 'embed') {
     let img = 'https://cdn.discordapp.com/avatars/768730214015565844/3f5415ff94cf42846040d851a427e018.webp?size=128';
     let embed = new Discord.RichEmbed()
-      .setTitle('타이틀')
+      .setTitle('smplad')
       .setURL('http://www.naver.com')
       .setAuthor('smplad', img, 'http://www.naver.com')
       .setThumbnail(img)
       .addBlankField()
-      .addField('Inline field title', 'Some value here')
-      .addField('Inline field title', 'Some value here', true)
-      .addField('Inline field title', 'Some value here', true)
-      .addField('Inline field title', 'Some value here', true)
+      .addField('-노예- 봇 개발자', 'smplad')
+      .addField('이승훈은 뭐다?', '개인주의다', true)
+      .addField('김규빈은 뭐다?', '고속버스다', true)
+      .addField('김다온은 뭐다?', '그렇게 말하면 애들이 오해한다', true)
       .addField('Inline field title', 'Some value here1\nSome value here2\nSome value here3\n')
       .addBlankField()
       .setTimestamp()
       .setFooter('좋은 하루', img)
 
     message.channel.send(embed)
-  } else if(message.content == '!help') {
+  } else if(message.content == '!도움') {
     let helpImg = 'https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png';
     let commandList = [
-      {name: '!help', desc: 'help'},
+      {name: '!도움', desc: '명령어 모음'},
       {name: 'ping', desc: '현재 핑 상태'},
       {name: 'embed', desc: 'embed 예제1'},
       {name: '!전체공지', desc: 'dm으로 전체 공지 보내기'},
