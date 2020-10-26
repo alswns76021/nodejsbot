@@ -145,7 +145,7 @@ client.on('message', (message) => {
       let embed = new Discord.RichEmbed()
         .setAuthor('공지 of 노예 BOT')
         .setColor('#186de6')
-        .setFooter(`노예 BOT ❤️`)
+        .setFooter(`노예 BOT ❤`)
         .setTimestamp()
   
       embed.addField('공지: ', contents);
