@@ -34,8 +34,8 @@ client.on("guildMemberRemove", (member) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
-  if(message.content == 'ping') {
-    return message.reply('pong');
+  if(message.content == '핑') {
+    return message.reply('퐁!');
   }
 
   if(message.content == '!si') {
@@ -46,10 +46,10 @@ client.on('message', (message) => {
     embed.setAuthor('server info of 노예 BOT', img)
     embed.setFooter(`노예 BOT ❤️`)
     embed.addBlankField()
-    embed.addField('RAM usage',    `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`, true);
-    embed.addField('running time', `${duration}`, true);
-    embed.addField('user',         `${client.users.size.toLocaleString()}`, true);
-    embed.addField('server',       `${client.guilds.size.toLocaleString()}`, true);
+    embed.addField('RAM 사용량',    `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`, true);
+    embed.addField('작동 시간', `${duration}`, true);
+    embed.addField('서버 접속 인원 수',         `${client.users.size.toLocaleString()}`, true);
+    embed.addField('접속중인 서버 갯수',       `${client.guilds.size.toLocaleString()}`, true);
     // embed.addField('channel',      `${client.channels.size.toLocaleString()}`, true);
     embed.addField('Discord.js',   `v${Discord.version}`, true);
     embed.addField('Node',         `${process.version}`, true);
@@ -63,7 +63,7 @@ client.on('message', (message) => {
       list += `${arr[i].name}\n`
     }
     list += `\`\`\`\n`
-    embed.addField('list:',        `${list}`);
+    embed.addField('접속중인 방 목록:',        `${list}`);
 
     embed.setTimestamp()
     message.channel.send(embed);
