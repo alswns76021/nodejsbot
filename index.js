@@ -69,7 +69,7 @@ client.on('message', (message) => {
     message.channel.send(embed);
   }
 
-  if(message.content == '!정보') {
+  if(message.content == '!정보창') {
     let img = 'https://cdn.discordapp.com/avatars/768730214015565844/3f5415ff94cf42846040d851a427e018.webp?size=128';
     let embed = new Discord.RichEmbed()
       .setTitle('smplad')
