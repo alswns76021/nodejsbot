@@ -40,7 +40,7 @@ client.on('message', (message) => {
 
   if(message.content == '!봇 정보') {
     let embed = new Discord.RichEmbed()
-    let img = 'https://cdn.discordapp.com/avatars/768730214015565844/3f5415ff94cf42846040d851a427e018.webp?size=128';
+    let img = 'https://cdn.discordapp.com/avatars/769741374898831370/e59955f92e13983877adda79fca64790.webp?size=128';
     var duration = moment.duration(client.uptime).format(" D [일], H [시간], m [분], s [초]");
     embed.setColor('#186de6')
     embed.setAuthor('펩시 BOT 🥤 정보', img)
