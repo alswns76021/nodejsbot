@@ -143,10 +143,11 @@ client.on('message', (message) => {
     if(message.member != null) { // 채널에서 공지 쓸 때
       let contents = message.content.slice('!전체공지2'.length);
       let embed = new Discord.RichEmbed()
-        .setAuthor('공지 of 펩시 BOT 🥤')
-        .setColor('#186de6')
-        .setFooter(`펩시 BOT 🥤`)
-        .setTimestamp()
+      let img = 'https://cdn.discordapp.com/avatars/769741374898831370/e59955f92e13983877adda79fca64790.webp?size=128';
+        setAuthor('공지 of 펩시 BOT 🥤')
+        setColor('#186de6')
+        setFooter(`펩시 BOT 🥤`)
+        setTimestamp()
   
       embed.addField('공지: ', contents);
   
