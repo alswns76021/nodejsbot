@@ -34,8 +34,8 @@ client.on("guildMemberRemove", (member) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
-  if(message.content == '핑') {
-    return message.reply('퐁!');
+  if(message.content == '펩') {
+    return message.reply('시');
   }
 
   if(message.content == '!봇 정보') {
