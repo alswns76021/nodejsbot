@@ -38,7 +38,7 @@ client.on('message', (message) => {
     return message.reply('퐁!');
   }
 
-  if(message.content == '!봇정보') {
+  if(message.content == '!봇 정보') {
     let embed = new Discord.RichEmbed()
     let img = 'https://cdn.discordapp.com/avatars/768730214015565844/3f5415ff94cf42846040d851a427e018.webp?size=128';
     var duration = moment.duration(client.uptime).format(" D [일], H [시간], m [분], s [초]");
