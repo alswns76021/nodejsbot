@@ -43,8 +43,8 @@ client.on('message', (message) => {
     let img = 'https://cdn.discordapp.com/avatars/768730214015565844/3f5415ff94cf42846040d851a427e018.webp?size=128';
     var duration = moment.duration(client.uptime).format(" D [일], H [시간], m [분], s [초]");
     embed.setColor('#186de6')
-    embed.setAuthor('server info of 노예 BOT', img)
-    embed.setFooter(`노예 BOT ❤️`)
+    embed.setAuthor('펩시 BOT 🥤 정보', img)
+    embed.setFooter(`펩시 BOT 🥤`)
     embed.addBlankField()
     embed.addField('RAM 사용량',    `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`, true);
     embed.addField('작동 시간', `${duration}`, true);
@@ -77,7 +77,7 @@ client.on('message', (message) => {
       .setAuthor('smplad', img, 'http://www.naver.com')
       .setThumbnail(img)
       .addBlankField()
-      .addField('-노예- 봇 개발자', 'smplad')
+      .addField('펩시 🥤 봇 개발자', 'smplad')
       .addField('이승훈은 뭐다?', '개인주의다', true)
       .addField('김규빈은 뭐다?', '고속버스다', true)
       .addField('김다온은 뭐다?', '그렇게 말하면 애들이 오해한다', true)
@@ -101,9 +101,9 @@ client.on('message', (message) => {
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
-      .setAuthor('Help of 노예 BOT', helpImg)
+      .setAuthor('Help of 펩시 BOT 🥤', helpImg)
       .setColor('#186de6')
-      .setFooter(`노예 BOT ❤️`)
+      .setFooter(`펩시 BOT 🥤`)
       .setTimestamp()
     
     commandList.forEach(x => {
@@ -143,9 +143,9 @@ client.on('message', (message) => {
     if(message.member != null) { // 채널에서 공지 쓸 때
       let contents = message.content.slice('!전체공지2'.length);
       let embed = new Discord.RichEmbed()
-        .setAuthor('공지 of 노예 BOT')
+        .setAuthor('공지 of 펩시 BOT 🥤')
         .setColor('#186de6')
-        .setFooter(`노예 BOT ❤`)
+        .setFooter(`펩시 BOT 🥤`)
         .setTimestamp()
   
       embed.addField('공지: ', contents);
