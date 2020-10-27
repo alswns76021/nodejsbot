@@ -6,7 +6,7 @@ require("moment-duration-format");
 const welcomeChannelName = "안녕하세요";
 const byeChannelName = "안녕히가세요";
 const welcomeChannelComment = "반갑습니다. 저희 서버에 참가해주셔서 정말 감사합니다 >_<";
-const byeChannelComment = "당신이 다시 돌아오는 그날까지...😥";
+const byeChannelComment = "''당신이 다시 돌아오는 그날까지...😥''";
 
 client.on('ready', () => {
   console.log('켰다.');
@@ -38,7 +38,7 @@ client.on('message', (message) => {
     return message.reply('퐁!');
   }
 
-  if(message.content == '!si') {
+  if(message.content == '!봇 정보') {
     let embed = new Discord.RichEmbed()
     let img = 'https://cdn.discordapp.com/avatars/768730214015565844/3f5415ff94cf42846040d851a427e018.webp?size=128';
     var duration = moment.duration(client.uptime).format(" D [일], H [시간], m [분], s [초]");
