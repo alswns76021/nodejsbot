@@ -68,12 +68,6 @@ client.on('message', (message) => {
     embed.setTimestamp()
     message.channel.send(embed);
   }
-
-  if(message.content == '!현재시간') {
-    let embed = new Discord.RichEmbed()
-    var duration = moment.duration(client.uptime).format ("D [일], H [시간], m [분], s [초]");
-  }
-
   if(message.content == '!정보창') {
     let img = 'https://cdn.discordapp.com/avatars/768730214015565844/3f5415ff94cf42846040d851a427e018.webp?size=128';
     let embed = new Discord.RichEmbed()
@@ -217,6 +211,11 @@ client.on('message', (message) => {
     }
   }
 });
+
+if(message.content == '!현재시간') {
+  let embed = new Discord.RichEmbed()
+  var duration = moment.duration(client.uptime).format (" D [일], H [시간], m [분], s [초]");
+}
 
 function checkPermission(message) {
   if(!message.member.hasPermission("MANAGE_MESSAGES")) {
