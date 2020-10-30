@@ -214,7 +214,8 @@ client.on('message', (message) => {
 
 if(message.content == '!현재시간') {
   let embed = new Discord.RichEmbed()
-  var duration = moment.duration(client.uptime).format (" D [일], H [시간], m [분], s [초]");
+  var duration = moment.duration(client.uptime).format(" D [일], H [시간], m [분], s [초]");
+  embed.setFooter(`펩시 BOT 🥤`)
 }
 
 function checkPermission(message) {
